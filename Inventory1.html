@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTORY SYSTEM</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 style="color: tomato;">Great Store Inc.<h1> 
+      <h2>Inventory System</h2>   
+      <a href="Inventory2.html" style="text-decoration: none;"><h4 style="text-align: right;color:#1A73E8">Please View Saved Items here</h4></a>
+    </div>
+</div>
+
+<div class="container">
+  <h2>Please Enter Item Details Here!</h2>
+  <form>
+    <div class="form-group">
+      <label for="text" style="font-size:19px; color: #337AB7;">Item Name:</label>
+      <input type="text" class="form-control" id="item1" placeholder="Enter Item Name" name="email" style="width:30% ;">
+    </div>
+    <div class="form-group">
+      <label for="number" style="font-size:19px;color: #337AB7;" >Price:</label>
+      <input type="number" class="form-control" id="price1" placeholder="Enter Price" name="pswd" style="width:20%;">
+    </div>
+    <div class="form-group">
+      <label for="text" style="font-size:19px;color: #337AB7;">Quantity:</label>
+      <input type="number" class="form-control" id="qty1" placeholder="Enter Quantity" name="email" style="width:15% ;">
+    </div>
+    <div class="form-group">
+      <label for="date" style="font-size:19px;color: #337AB7;">Date:</label>
+      <input type="date" class="form-control" id="dat1" placeholder="Enter Date" name="email" style="width:15% ;">
+    </div>
+    <div class="form-group">
+      <label for="text" style="font-size:19px;color: #337AB7;">Seller's Name:</label>
+      <input type="text" class="form-control" id="seller1" placeholder="Enter Seller's Name" name="email" style="width:25% ;">
+    </div>
+    <br>
+    </form>
+
+     <div class = "container">
+     <div style="height: 324px; width: 30%; background-color:#EEEEEE;margin-left:400px; margin-top:-370px; visibility: hidden; border-radius:9px;" id="cont">
+  
+      <button onclick="clos()" style="background-color: tomato; color: white; font-weight: bold;border: none; outline-color: tomato; border-radius: 5px; height:30px; width:15%;">X</button> <br>
+     <p style="color: tomato; font-weight: bold;padding-left:5px;">PLEASE CONFIRM THE ITEM'S DETAILS BELOW:</p><br> <p id="cont1" style="padding-left:25px; font-weight: bold;"></p>
+     <button style="width:30%; height:32px; font-weight: bold; background-color: tomato; color: white; border: none; border-radius:5px; outline-color:tomato; margin-left:238px;" onclick="btn1()">SAVE ITEM!</button>
+  
+     </div>
+
+     
+     </div>
+
+
+
+    
+   <button onclick="prev()" style="width:7%; height:32px; font-weight: bold; background-color:#1A73E8; color: white; border: none; border-radius:5px; outline-color:#1A73E8;">Preview!</button>
+
+  
+</div> <br> <br> <br>
+
+<div class="container" style="background-color:#337AB7; height:70px; width: 100%;">
+
+<h4 style="color: white; text-align: center;font-weight: bold;">Designed by GREAT with  <span style="color: tomato;">Love</span> in SQI.</h4>
+
+</div>
+<script src = "Inventory.js"></script>
+</body>
+</html>

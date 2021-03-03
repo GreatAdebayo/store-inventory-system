@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTORY SYSTEM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 style="color: tomato;">Great Store Inc.<h1> 
+      <h2>Inventory System</h2>   
+      <a href="#" style="text-decoration: none;"><h4 style="text-align: right;color:#1A73E8">First Quarter Project 1!</h4></a>
+   
+  </div>
+</div>
+
+<div class="container">
+  <h2>Items Summary:</h2>
+  <button onclick="viewStore()" class="btn btn-light" style="width: 15%; font-weight: bold; background-color: tomato; outline-color:tomato; color: white;">View Saved Item</button> <br> <br>
+  <table class="table table-bordered table-striped">
+    
+    <thead>
+      <tr>
+       <th>S/N</th>
+        <th>Item Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Date</th>
+        <th>Seller's Name</th>
+        <th>Total (USD)</th>
+      </tr>
+    </thead>
+
+    <tbody id="tab">
+  
+
+    </tbody>
+
+  </table>
+   
+  
+  <h3 style=" color: tomato; font-weight: bold;"  id=grand1></h3>
+  <br>
+    <br> <br>
+
+    
+    <button onclick="printIt()" class="btn btn-light" style="width: 10%; font-weight: bold;background-color:#1A73E8; color: white;" onclick="btn2()">Print!</button><br>
+  
+</div> <br> <br> <br>
+
+<div class="container" style="background-color:#337AB7; height:70px; width: 100%;">
+
+<h4 style="color: white; text-align: center;font-weight: bold;">Designed by GREAT with <span style="color: tomato;">Love</span> in SQI.</h4>
+
+</div>
+<script src = "Inventory.js"></script>
+</body>
+</html>
